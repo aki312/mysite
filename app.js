@@ -4,6 +4,11 @@ const mysql = require("mysql2");
 const app = express();
 
 app.use(express.static("public"));
+app.use("/fa", express.static(__dirname + "/node_modules/font-awesome/css"));
+app.use(
+  "/fonts",
+  express.static(__dirname + "/node_modules/font-awesome/fonts")
+);
 
 const connection = mysql.createConnection({
   host: "localhost",
