@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header-logo {
+  background-color: white;
+  width: 1168px;
+  padding: 20px 16px;
+  margin: 0 31.667px;
+  line-height: 60%;
+}
+.header-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: black;
+  opacity: 0.8;
+  line-height: 38.67px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-left: 48.667px;
+  margin-right: 11.33px;
+}
