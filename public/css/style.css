@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  min-height: 150vh;
 }
 header {
   position: fixed;
@@ -27,7 +29,7 @@ header {
 header a {
   text-decoration: none;
   color: white;
-  font-size: 13px;
+  font-size: 13.3px;
   margin-left: 48.667px;
   margin-right: 11.33px;
 }
@@ -35,19 +37,34 @@ header a {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
-  margin: 158px auto 0;
+  margin: 158px auto 60px;
 }
 .pickup-wrapper {
   display: flex;
   flex: 100%;
-  justify-content: space-around;
 }
 .pickup-1,
 .pickup-2,
 .pickup-3 {
   width: 373.75px;
 }
+.pickup-1 {
+  margin-left: 16px;
+}
+.pickup-2 {
+  margin: 0 auto;
+}
+.pickup-3 {
+  margin-right: 16px;
+}
 .pickup-wrapper h3 {
   font-size: 16px;
   margin: 10px 0 15px;
+}
+.pickup-wrapper a {
+  display: block;
+  text-align: center;
+  font-size: small;
+  color: black;
+  text-decoration: none;
 }
