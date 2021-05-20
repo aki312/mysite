@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: scroll;
+  min-height: 150vh;
 }
 ul {
   padding: 0;
@@ -16,6 +18,8 @@ ul {
 }
 header {
   position: fixed;
+  z-index: 1;
+  top: 0;
   width: 100%;
   background-color: white;
 }
@@ -41,4 +45,31 @@ header a {
   text-decoration: none;
   font-size: 13px;
   color: white;
+}
+.container {
+  max-width: 1200px;
+  min-width: 480px;
+  margin: 0 auto;
+  padding: 150px 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.pickup-wrapper {
+  display: flex;
+  max-width: 1168px;
+  min-width: 480px;
+  flex: 100%;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  margin-bottom: 60px;
+}
+.pickup-1,
+.pickup-2,
+.pickup-3 {
+  width: 32%;
+}
+.pickup-wrapper img {
+  width: 100%;
+  height: auto;
 }
