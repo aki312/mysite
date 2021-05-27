@@ -7,6 +7,7 @@ body {
   font-size: 1rem;
   min-height: 150vh;
   font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -112,6 +113,7 @@ header a {
 }
 .main-wrapper {
   width: 65%;
+  box-sizing: border-box;
 }
 .main-wrapper h2 {
   margin: 10px 0 15px;
@@ -128,4 +130,27 @@ header a {
 .main-wrapper img {
   width: 100%;
   height: auto;
+}
+.aside-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.sideber {
+  padding: 20px;
+  width: 94%;
+  box-sizing: border-box;
+}
+.sideber-img {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.sideber-img img {
+  width: 37%;
+  border-radius: 50%;
+}
+.sideber h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
 }
