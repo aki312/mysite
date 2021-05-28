@@ -115,6 +115,9 @@ header a {
   width: 65%;
   box-sizing: border-box;
 }
+.article {
+  margin-bottom: 80px;
+}
 .main-wrapper h2 {
   margin: 10px 0 15px;
 }
@@ -131,6 +134,10 @@ header a {
   width: 100%;
   height: auto;
 }
+.main-wrapper p {
+  padding: 10px 40px 30px;
+  margin: 0;
+}
 .aside-wrapper {
   flex: 1;
   display: flex;
@@ -141,16 +148,35 @@ header a {
   width: 94%;
   box-sizing: border-box;
 }
-.sideber-img {
+.section-author {
   text-align: center;
-  padding-bottom: 30px;
+  margin-bottom: 60px;
 }
-.sideber-img img {
+.section-author img {
   width: 37%;
   border-radius: 50%;
+  margin: 0 0 30px;
 }
-.sideber h2 {
+.section-author h2 {
   margin: 0;
   font-size: 18px;
   text-align: center;
+  margin-bottom: 30px;
+}
+.section-author p {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+}
+.section-ranking h3 {
+  margin: 0 0 30px;
+  text-align: center;
+}
+.section-ranking img {
+  width: 100%;
+  height: auto;
+}
+.section-ranking p {
+  margin: 0 0 30px;
+  font-size: 14px;
 }
