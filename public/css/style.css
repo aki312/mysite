@@ -114,6 +114,7 @@ header a {
 .main-wrapper {
   width: 65%;
   box-sizing: border-box;
+  height: 2341px;
 }
 .article {
   margin-bottom: 80px;
@@ -168,6 +169,9 @@ header a {
   font-size: 14px;
   text-align: left;
 }
+.section-ranking {
+  margin: 0 0 60px;
+}
 .section-ranking h3 {
   margin: 0 0 30px;
   text-align: center;
@@ -179,4 +183,70 @@ header a {
 .section-ranking p {
   margin: 0 0 30px;
   font-size: 14px;
+}
+.archive {
+  border-bottom: solid 1px #333;
+}
+.archive h3 {
+  text-align: center;
+  margin: 0 0 30px;
+}
+.archive li {
+  list-style: none;
+  padding: 20px;
+  font-size: 14px;
+  border-top: solid 1px #333;
+}
+footer {
+  width: 100%;
+  margin: 60px 0 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  font-weight: normal;
+  margin-bottom: 50px;
+  /* padding-top: 50px; */
+}
+.footer-section {
+  width: 30%;
+  margin-top: 50px;
+}
+.footer-section h3 {
+  margin: 0 0 30px;
+}
+.footer-section p {
+  font-size: 14px;
+  color: #333;
+}
+.about ul {
+  margin: 20px 0;
+}
+.about li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 5px;
+}
+.about a {
+  position: relative;
+  padding-left: 10px;
+}
+.about a::before {
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  width: 0px;
+  height: 0px;
+  content: "";
+  border-top: 6px solid transparent;
+  border-left: 8px solid black;
+  border-bottom: 6px solid transparent;
+}
+.menu li {
+  padding: 15px;
+  list-style: none;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+.menu {
+  border-bottom: 1px solid #333;
 }
