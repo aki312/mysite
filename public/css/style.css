@@ -57,7 +57,7 @@ header a {
 }
 .container {
   max-width: 1200px;
-  min-width: 480px;
+
   margin: 0 auto;
   padding: 150px 16px 0;
   display: flex;
@@ -70,7 +70,7 @@ header a {
   min-width: 480px;
   flex: 100%;
   justify-content: space-between;
-  background-color: whitesmoke;
+
   margin-bottom: 60px;
 }
 .pickup-1,
@@ -154,7 +154,8 @@ header a {
   margin-bottom: 60px;
 }
 .section-author img {
-  width: 37%;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   margin: 0 0 30px;
 }
@@ -206,7 +207,6 @@ footer {
   background-color: whitesmoke;
   font-weight: normal;
   margin-bottom: 60px;
-  /* padding-top: 50px; */
 }
 .footer-section {
   width: 30%;
@@ -258,4 +258,46 @@ footer {
   padding-bottom: 10px;
   background-color: whitesmoke;
   font-size: 14px;
+}
+@media (max-width: 765px) {
+  body {
+    flex-direction: column;
+  }
+  .pickup-wrapper {
+    flex-direction: column;
+  }
+  .pickup-1,
+  .pickup-2,
+  .pickup-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .main-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .aside-wrapper {
+    justify-content: center;
+  }
+  .sideber {
+    padding: 0;
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+  .footer-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .copyright {
+    margin-top: -1125px;
+    padding-top: 1125px;
+  }
+  .footer-section:first-child {
+    margin-top: 50px;
+  }
 }
