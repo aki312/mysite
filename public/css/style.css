@@ -201,10 +201,11 @@ footer {
   width: 100%;
   margin: 60px 0 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: whitesmoke;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   /* padding-top: 50px; */
 }
 .footer-section {
@@ -247,6 +248,14 @@ footer {
   font-size: 14px;
   border-top: 1px solid #333;
 }
-.menu {
+.menu ul {
   border-bottom: 1px solid #333;
+}
+.copyright {
+  text-align: center;
+  margin-top: -485px;
+  padding-top: 485px;
+  padding-bottom: 10px;
+  background-color: whitesmoke;
+  font-size: 14px;
 }
