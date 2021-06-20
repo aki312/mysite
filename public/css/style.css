@@ -6,13 +6,17 @@ body {
   margin: 0;
   font-size: 13px;
 
-  height: 140vh;
+  
 }
 .header-container {
   width: 100%;
-  height: 100vh;
-  background-color: black;
+  height: 100%;
+ 
+  background-size: cover;
+  
+  background-position: center 70%;
   position: relative;
+ 
   animation-name: slide-show;
   animation-duration: 20s;
   animation-iteration-count: infinite;
@@ -49,7 +53,14 @@ ul {
 li {
   letter-spacing: 0.1rem;
 }
-a {
+.header-logo a {
+  height: 72px;
+  display: inline-block;
+}
+.header-logo a:hover {
+  opacity: 0.8;
+}
+.g-nav a {
   display: inline-block;
   text-decoration: none;
   color: white;
@@ -73,7 +84,7 @@ a {
 .background-cover {
   padding-top: 90vh;
 
-  overflow: hidden;
+  
   display: block;
 }
 .background-bottom {
@@ -86,10 +97,18 @@ a {
   background-color: white;
   z-index: 3;
 }
+.background-cover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 6vh;
+  background-color: #f6f6f6;
+}
 @-webkit-keyframes slide-show {
   0% {
     background-image: url(../images/main_visual_2-0x0.jpg);
     opacity: 1;
+    
   }
   
   
