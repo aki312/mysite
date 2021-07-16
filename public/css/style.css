@@ -104,8 +104,9 @@ header {
   letter-spacing: 0.4rem;
 }
 .container {
-  width: 820px;
+  max-width: 920px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 .concept-wrapper P {
   font-size: 2rem;
@@ -140,6 +141,16 @@ header {
   text-decoration: none;
   color: #333;
   position: relative;
+  border: 1px solid #333;
+  transition: all 0.3s;
+}
+.section-title a:hover::after {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.section-title a:hover {
+  background-color: black;
+  color: white;
 }
 .section-title h1 {
   font-family: "Gill Sans Std Book", sans-serif;
@@ -164,11 +175,35 @@ header {
   display: inline-block;
   position: absolute;
   right: 15px;
-  top: 40%;
+  top: 39%;
   content: "";
   width: 7px;
   height: 7px;
   border-right: 1.5px solid #333;
   border-bottom: 1.5px solid #333;
   transform: rotate(-45deg);
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+article {
+  padding: 50px 16px 0;
+  width: 33.333%;
+}
+.product-item:hover {
+  opacity: 0.8;
+}
+
+.product-item img {
+  vertical-align: top;
+}
+.product-item h2 {
+  margin: 0;
+  padding: 20px 20px 0;
+  font-size: 2rem;
+  text-align: left;
+  cursor: pointer;
+
+  letter-spacing: 0.2rem;
 }
