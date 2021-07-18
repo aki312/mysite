@@ -7,6 +7,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic,
     "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo,
     sans-serif;
+  line-height: 1.7;
 }
 * {
   box-sizing: border-box;
@@ -16,9 +17,10 @@ h1 {
 }
 .header-wrapper {
   width: 100%;
-  height: calc(100vh - 30px);
+  min-height: calc(100vh - 30px);
   position: relative;
   overflow: hidden;
+  background-size: contain;
 }
 
 .header-background .background-main img {
@@ -28,6 +30,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+  min-width: 1050px;
 }
 .header-background .arrow {
   display: block;
@@ -46,17 +49,19 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
+  z-index: 2;
 }
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: calc(122px - 72px) 90px 0;
-  display: flex;
+  padding: 50px 7.13% 0;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header-logo img {
   width: 266px;
   height: 72px;
@@ -71,22 +76,23 @@ header {
 }
 .g-nav {
   width: 440px;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  list-style: none;
   padding: 0;
   margin: 0;
-  list-style: none;
 }
+
 .g-nav a {
+  display: block;
+  text-decoration: none;
   font-size: 1.4rem;
   color: white;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  letter-spacing: 0.1rem;
-  padding-bottom: 5px;
+  letter-spacing: 0.1em;
+  padding-bottom: 6px;
   border-bottom: 2px solid transparent;
   transition: all 0.3s;
-  font-family: "Gill Sans Std Book", sans-serif;
+  margin-bottom: -12px;
 }
 .g-nav a:hover {
   border-bottom: 2px solid white;
@@ -204,6 +210,6 @@ article {
   font-size: 2rem;
   text-align: left;
   cursor: pointer;
-
+  /* vertical-align: top; */
   letter-spacing: 0.2rem;
 }
