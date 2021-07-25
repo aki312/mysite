@@ -298,3 +298,23 @@ time {
   font-size: 1.3rem;
   color: #656c6e;
 }
+.share {
+  text-align: center;
+  padding: 35px 0;
+}
+.share-bottons {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: inline-flex;
+  min-width: 540px;
+  justify-content: space-between;
+  height: 44px;
+}
+.fa,
+.tw,
+.ha {
+  display: inline-block;
+  line-height: 44px;
+  width: 160px;
+}
