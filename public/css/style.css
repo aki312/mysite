@@ -284,16 +284,17 @@ article {
 .section-article p {
   margin-top: 20px;
   font-size: 1.3rem;
-
+  color: #656c6e;
   word-spacing: normal;
 }
 .news-wrapper {
   background-color: #f6f6f6;
   padding: 100px 0;
 }
-.container .section:nth-last-of-type(2) {
+.container .section:nth-last-of-type(6) {
   margin-top: 80px;
 }
 time {
   font-size: 1.3rem;
+  color: #656c6e;
 }
