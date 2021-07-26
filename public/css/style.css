@@ -326,7 +326,7 @@ time {
   /* box-sizing: border-box; */
   text-decoration: none;
   letter-spacing: 0.1rem;
-
+  transition: all 0.3s;
   font-family: "Gill Sans Std Book", sans-serif;
 }
 .tw {
@@ -357,14 +357,13 @@ time {
   position: absolute;
   display: block;
   top: 0;
-  left: 50%;
+  left: calc(50% - 25px);
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: white;
-  transform: translate(-50%, -50%);
-  /* position: relative; */
-  /* z-index: 1; */
+  margin-top: -25px;
+  transition: all 0.3s;
 }
 .share-arrow::before {
   /* display: block; */
@@ -377,5 +376,13 @@ time {
   border-top: 1px solid #333;
   border-right: 1px solid #333;
   transform: rotate(-45deg);
-  /* z-index: 1; */
+  z-index: 1;
+}
+.share-arrow:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.share-arrow:hover::before {
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
 }
