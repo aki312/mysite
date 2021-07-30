@@ -386,3 +386,46 @@ time {
   border-top: 1px solid #333;
   border-right: 1px solid #333;
 }
+.footer-nav {
+  display: flex;
+  padding: 30px 0;
+  justify-content: center;
+  background-color: rgba(147, 152, 153, 0.8);
+  transition: all 0.3s;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 440px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: normal;
+}
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Gill Sans Std Book", sans-serif;
+}
+.footer-nav a:hover {
+  opacity: 0.8;
+}
+footer {
+  padding: 35px 0;
+  background-color: #656c6e;
+}
+footer img {
+  vertical-align: top;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+small {
+  color: white;
+  letter-spacing: 0.045rem;
+  font-family: "Gill Sans Std Book", sans-serif;
+}
