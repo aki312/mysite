@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.8;
+  height: 200vh;
+}
+header {
+  border-top: 8px solid #6cc6c4;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+}
+header h1 img {
+  width: 260px;
+  vertical-align: bottom;
+}
+.tel {
+  font-size: 2.5rem;
+  letter-spacing: 0.05rem;
+}
+.tel img {
+  padding-right: 15px;
+  margin-bottom: -3px;
+}
+.time {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #d6d6d6;
+  width: 210px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.time span {
+  color: #b22c00;
+}
+.header-introduction {
+  width: 100%;
+}
+.header-introduction ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-introduction li {
+  width: 50%;
+  height: 70px;
+}
+.header-introduction a {
+  display: inline-flex;
+  height: 70px;
+  text-shadow: 1px 1px 2px #6cc6c4;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: #99e1df;
+  color: white;
+  font-weight: bold;
+}
+.ja {
+  font-size: 1.5rem;
+  margin-bottom: -2px;
+}
+.eu {
+  font-size: 1.1rem;
+}
