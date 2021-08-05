@@ -37,7 +37,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -132,7 +131,8 @@ table {
 }
 body {
   line-height: 1.8;
-  height: 200vh;
+
+  background-color: rgb(246, 246, 246);
 }
 header {
   border-top: 8px solid #6cc6c4;
@@ -185,9 +185,22 @@ header h1 img {
   border-radius: 6px;
   flex-direction: column;
   text-decoration: none;
-  background-color: #99e1df;
+
+  border: solid 1px #6cc6c4;
   color: white;
   font-weight: bold;
+
+  background-image: linear-gradient(
+    rgb(156, 227, 225) 0%,
+    rgb(108, 198, 196) 100%
+  );
+}
+.header-introduction a:hover {
+  background-image: linear-gradient(
+    rgb(108, 198, 196) 0%,
+    rgb(156, 227, 225) 100%
+  );
+  color: rgba(255, 255, 255, 0.7);
 }
 .ja {
   font-size: 1.5rem;
@@ -195,4 +208,139 @@ header h1 img {
 }
 .eu {
   font-size: 1.1rem;
+}
+.container {
+  width: calc(100% - 24px);
+  box-sizing: content-box;
+  padding: 0 12px;
+}
+main {
+  margin-top: 24px;
+}
+main .information {
+  padding: 20px 20px 35px;
+  margin-bottom: 40px;
+  background-color: white;
+}
+figure img {
+  width: 100%;
+}
+main .information h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  padding: 9px 0;
+  border-bottom: 3px solid #6cc6c4;
+}
+.information dl {
+  margin-top: 15px;
+}
+.information dt {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px 0;
+}
+.information dd {
+  font-size: 1.3rem;
+  font-weight: normal;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  line-height: 1.5;
+}
+.medical-care h2 {
+  font-size: 1.6rem;
+  border-radius: 6px 6px 0 0;
+  background-image: linear-gradient(
+    rgb(156, 227, 225) 0%,
+    rgb(108, 198, 196) 100%
+  );
+  color: white;
+  font-weight: bold;
+  padding: 7px 15px 5px;
+}
+section ul li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  /* padding: 10px 0 10px 8px; */
+  line-height: 40.667px;
+  border-bottom: 1px solid #6cc6c4;
+}
+section ul {
+  border: 1px solid #6cc6c4;
+  padding: 0 10px 23px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+section li::before {
+  content: "\025c6";
+  margin-right: 10px;
+
+  color: #6cc6c4;
+}
+
+section a {
+  display: block;
+  height: 40.667px;
+  text-decoration: none;
+}
+.care-1 a li:hover {
+  color: #6cc6c4;
+}
+.care-2 a li:hover {
+  color: rgb(192, 194, 76);
+}
+footer ul {
+  display: flex;
+  width: 100%;
+
+  font-size: 1.3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  background-color: #6cc6c4;
+  padding: 8px 20px;
+  box-sizing: border-box;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  line-height: 1;
+}
+footer li {
+  position: relative;
+  transition: all 0.3s;
+}
+
+footer li::before {
+  content: "\02668";
+  margin-right: 10px;
+  vertical-align: 1px;
+}
+
+footer li::after {
+  content: "";
+  width: calc(100% - 24px);
+  height: 1px;
+  background-color: transparent;
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+}
+footer li:hover::after {
+  background-color: white;
+}
+.footer-address {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 1.3rem;
+  border-bottom: 3px solid #6cc6c4;
+}
+.footer-copyright {
+  text-align: center;
+  padding: 10px;
 }
