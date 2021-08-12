@@ -192,6 +192,7 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   height: 80px;
   color: white;
+  z-index: 10;
 }
 .container {
   width: calc(100% - 40px);
@@ -271,11 +272,11 @@ header {
 .question p {
   font-size: 1.3rem;
   font-weight: 400;
-  margin-left: 20px;
+  margin-left: 13px;
   font-style: normal;
 }
 .question p:first-of-type {
-  padding: 25px;
+  padding: 25px 30px;
   box-sizing: content-box;
   display: inline-block;
   background-color: rgb(3, 138, 241);
@@ -294,7 +295,7 @@ header {
   border-color: rgb(3, 138, 241) transparent transparent;
   position: absolute;
   top: 100%;
-  left: 40px;
+  left: 50px;
 }
 .question span {
   border-bottom: 3px solid rgb(3, 138, 241);
@@ -302,6 +303,48 @@ header {
 }
 .question p:not(:first-of-type) {
   font-weight: 700;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   line-height: 2.2;
+}
+.C-wrapper h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+.C-wrapper span {
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: block;
+}
+.C-wrapper h2::before {
+  content: "\f559";
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fc0075;
+  font-size: 3.5rem;
+  border: 1px solid transparent;
+  background-color: white;
+  width: 90px;
+  height: 80px;
+  margin: -33px auto 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  border-radius: 50% 50% 0 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+.C-wrapper h2::after {
+  content: "REASON";
+  display: inline-block;
+  color: #000;
+
+  font-size: 1.6rem;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  padding-bottom: 5px;
+  transform: translateX(-47%);
 }
