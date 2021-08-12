@@ -1,0 +1,307 @@
+@charset "UTF-8";
+/* @import url(https://use.fontawesome.com/releases/v5.3.1/css/all.css); */
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-family: Avenir, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans",
+    ヒラギノ角ゴシック, YuGothic, "Yu Gothic", メイリオ, Meiryo,
+    "ＭＳ Ｐゴシック", "MS PGothic";
+  line-height: 1.7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80px;
+  color: white;
+}
+.container {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.header-left img {
+  width: 150px;
+  margin-top: calc((80px - 40.688px) / 2);
+}
+.A-wrapper {
+  height: 600px;
+  padding-top: 180px;
+  text-align: center;
+  background-image: url(../images/haikei.jpg);
+  background-size: cover;
+  background-position: top center;
+  box-sizing: border-box;
+  color: white;
+}
+.A-wrapper h2 {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.A-wrapper .casen {
+  background-image: linear-gradient(transparent 75%, #fc0075 75%);
+}
+.A-wrapper h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.4rem;
+  margin-top: 10px;
+}
+.useful-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 35px 0;
+}
+.useful-wrapper::after {
+  content: "\f13a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  margin-top: 70px;
+  font-size: 3.5rem;
+}
+.useful {
+  width: 30%;
+  font-size: 1.1rem;
+}
+
+.useful p::before {
+  content: "\f2c1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  display: block;
+  /* padding-right: 10px; */
+  font-size: 3.5rem;
+}
+/* .useful p {
+  display: inline-flex;
+  align-items: center;
+} */
+.B-wrapper {
+  background-image: url(../images/haikei2.jpg);
+  background-size: cover;
+  width: 100%;
+  padding-top: 40px;
+  height: 350px;
+  box-sizing: border-box;
+  background-position: center;
+}
+/* .question {
+  margin-top: 40px;
+} */
+.question p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-left: 20px;
+  font-style: normal;
+}
+.question p:first-of-type {
+  padding: 25px;
+  box-sizing: content-box;
+  display: inline-block;
+  background-color: rgb(3, 138, 241);
+  /* opacity: 0.8; */
+  position: relative;
+  margin-bottom: 30px;
+  color: white;
+}
+.question p:first-of-type::after {
+  content: "";
+  /* display: block; */
+  width: 0;
+  height: 0;
+  border-width: 10px 10px 10px;
+  border-style: solid;
+  border-color: rgb(3, 138, 241) transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 40px;
+}
+.question span {
+  border-bottom: 3px solid rgb(3, 138, 241);
+  font-size: 1.5rem;
+}
+.question p:not(:first-of-type) {
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 2.2;
+}
