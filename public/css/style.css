@@ -361,12 +361,13 @@ header {
   top: 70px;
   left: 50%;
   padding-bottom: 5px;
-  transform: translateX(-47%);
+  transform:    translateX(-47%);
 }
 
 .reason {
   padding: 0 25px;
+  font-size: 1rem;
 }
-.reason img {
-  width: 100%;
+.reason       ssimg {
+  width:    100%;
 }
